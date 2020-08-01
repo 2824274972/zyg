@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,
+   maximum-scale=1.0, user-scalable=0">
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#wrap{
+				width: 375px;
+				height: 800px;
+				background-color: #F5F5F5;
+			}
+			#head{
+				width: 375px;
+				height: 50px;
+				background-color: orangered;
+				color: white;
+				line-height: 50px;
+			}
+			#head h2{
+				display: inline-block;
+				font-size: 20px;
+				margin-left: 12px;
+				margin-right: 230px;
+				
+			}
+			#header{
+				width: 375px;
+				height: 125px;
+				background-color: orangered;
+			}
+			#header p,#header .tiao{
+				margin: auto;
+			}
+			#header p{
+				width: 351px;
+				font-size: 12px;
+				color: white;
+				
+			}
+			#header .tiao{
+				margin-top: 16px;
+				width: 351px;
+				height: 45px;
+				border-radius: 8px;
+				background-color: #FFF8F4;
+
+				color: #FF1111;
+			}
+			#header .tiao span{
+				line-height: 45px;
+				margin-left: 10px;
+			}
+			#header .tiao .iconfont{
+				width: 21px;
+				height: 21px;
+				text-align: center;
+				line-height: 21px;
+				border-radius: 0 10px 0 10px;
+				background-color: #D9D3CF;
+				font-size: 16px;
+				float: right;
+				color: white;
+			}
+			#fen{
+				width: 375px;
+				height: 470px;
+				border: 1px solid blue;
+				list-style: none;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: flex-end;	
+				
+			}
+			#fen li{
+				width: 351px;
+				height: 146px;
+				border: 1px solid red;
+			}
+			.pin{
+				width: 351px;
+				height: 146px;
+				margin: auto;
+				margin-top: 15px;
+			}
+			.pin .pin_head{
+				width: 351px;
+				height: 44px;
+				background-color: white;
+				border-radius: 10px 10px 0 0;
+				line-height: 44px;
+			}
+			.pin .pin_head .zi{
+				margin-left: 5px;
+			}
+			.pin .pin_head .zi,.pin_head .zip{
+				font-size: 13px;
+			}
+			.pin .pin_head .zip{
+				opacity: 0.6;
+				margin-left: 145px;
+			}
+			.pin .pin_head .yuan{
+				width: 45px;
+				height: 44px;
+				text-align: center;
+				line-height: 44px;
+				display: inline-block;
+			}
+			.pin .pin_head .yuan .iconfont{
+				font-size: 20px;
+			}
+			.pin .pin_shen{
+				width: 351px;
+				height: 102px;
+				background-color: white;
+				border-radius: 0 0 10px 10px;
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-start;
+			}
+			.pin .pin_shen .yuan{
+				width: 45px;
+				height: 90px;
+			}
+			.pin .pin_shen .yuan .iconfont{
+				text-align: center;
+				line-height: 90px;
+				font-size: 20px;
+			}
+			.pin .pin_shen .img{
+			}
+			.pin .pin_shen .img,.pin_shen .img img{
+				width: 90px;
+				height: 90px;
+			}
+			.pin .pin_shen .wen{
+				width: 204px;
+				height: 90px;
+			}
+			.pin .pin_shen .wen .wen_a{
+				margin-left: 10px;
+				width: 192px;
+				height: 36px;
+				font-size: 14px;
+				overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+			}
+			.pin .pin_shen .wen .wen_b{
+				margin-left: 10px;
+				margin-top: 18px;
+				width: 192px;
+				height: 35px;
+				list-style: none;
+				display: flex;
+				line-height: 35px;
+			}
+			.pin .pin_shen .wen .wen_b li:nth-child(1){
+				width: 92px;
+				height: 35px;
+				color: orangered;
+				font-size: 14px;
+			}
+			.pin .pin_shen .wen .wen_b li:nth-child(2){
+				border-radius: 3px 0 0 3px;
+			}
+			.pin .pin_shen .wen .wen_b li:nth-child(4){
+				border-radius: 0 3px 3px 0;
+			}
+			.pin .pin_shen .wen .wen_b li:nth-child(2),.pin .pin_shen .wen .wen_b li:nth-child(3),
+			.pin .pin_shen .wen .wen_b li:nth-child(4){
+				text-align: center;
+				line-height: 20px;
+				width: 33px;
+				height: 20px;
+				border: 1px solid black; 
+				opacity: 0.6;
+				margin-top: 8px;
+			}
+			.liu{
+				width: 375px;
+				height: 54px;
+				background-color: white;
+				border-bottom: 1px solid #E7E7E7;
+				display: flex;
+				line-height: 54px;
+				position: fixed;
+				bottom: 43px;
+			}
+			.liu .iconfont{
+				margin-left: 10px;
+				font-size: 20px;
+				
+			}
+			.liu .iconfont span{
+				font-size: 12px;
+			}
+			.liu .liu_a{
+				margin-left: 100px;
+			}
+			.liu .liu_a span{
+				margin-left: 5px;
+				color: orangered;
+			}
+			.liu .liu_b{
+				margin-top: 12px;
+				margin-left: 10px;
+				border-radius: 15px;
+				color: white;
+				width: 95px;
+				height: 30px;
+				background-color: orangered;
+				font-size: 14px;
+				text-align: center;
+				line-height: 30px;
+			}
+			#di{
+   		width: 375px;
+   		height: 43px;
+   		list-style: none;
+   		background-color: white;
+   		display: flex;
+   		position: fixed;
+   		bottom: 0;
+   	}
+   	#di li{
+   		flex: 5;
+   		text-align: center;
+   	}
+   	#di li .iconfont{
+   		font-size: 20px;
+   		opacity: 0.7;
+   	}
+   	#di li a{
+   		text-decoration: none;
+   		font-size: 12px;
+   		opacity: 0.7;
+   		color: black;
+   	}
+   </style>
+			
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="head">
+				<h2>购物车(3)</h2>
+				<span>管理</span>
+			</div>
+			<div id="header">
+				<p>共3件宝贝</p>
+				<div class="tiao">
+					<span>您有90元现金红包待领取，速领！</span>
+					<div class="iconfont">&#xe614;</div>
+				</div>
+				
+			</div>
+			<div class="pin">
+				<div class="pin_head">
+					<div class="yuan">
+						<div class="iconfont">&#xe609;</div>
+					</div>
+					<span class="iconfont">&#xe61d;</span>
+					<span class="zi">鑫茂商城总店</span>
+					<span class="iconfont" style="margin-left: -5px;">&#xe6ef;</span>
+					<span class="zip">领券</span>
+			    </div>
+				<div class="pin_shen">
+					<div class="yuan">
+						<div class="iconfont">&#xe609;</div>
+					</div>
+					<div class="img">
+						<img src="imgshang/TB25t8GdLImBKNjSZFlXXc43FXa_!!2577503174.jpg_190x190q90_.webp" alt="" />
+					</div>
+					<div class="wen">
+						<div class="wen_a">适合中年女士妈妈用的化妆品乳液中老年擦脸油摸脸油摸脸油润肤露</div>
+						    <ul class="wen_b">
+								<li>￥29.9</li>
+								<li>-</li>
+								<li>1</li>
+								<li>+</li>
+						    </ul>
+					   </div>
+				    </div>	
+			    </div>
+		    
+		    <div class="pin">
+				<div class="pin_head">
+					<div class="yuan">
+						<div class="iconfont">&#xe609;</div>
+					</div>
+					<span class="iconfont">&#xe61d;</span>
+					<span class="zi">迈特优服饰旗舰店</span>
+					<span class="iconfont" style="margin-left: -5px;">&#xe6ef;</span>
+					<span class="zip"  style="margin-left: 118px;">领券</span>
+			    </div>
+				<div class="pin_shen">
+					<div class="yuan">
+						<div class="iconfont">&#xe609;</div>
+					</div>
+					<div class="img">
+						<img src="imgshang/O1CN01cwATG71LbEAldovkc_!!2380441317.jpg_190x190q90_.webp" alt="" />
+					</div>
+					<div class="wen">
+						<div class="wen_a">工装裤子男士韩版2020春季休闲九分裤潮流宽松运动裤束脚长裤潮牌</div>
+						    <ul class="wen_b">
+								<li>￥49</li>
+								<li>-</li>
+								<li>1</li>
+								<li>+</li>
+						    </ul>
+					   </div>
+				    </div>	
+			    </div>
+		    
+		    <div class="pin">
+				<div class="pin_head">
+					<div class="yuan">
+						<div class="iconfont">&#xe609;</div>
+					</div>
+					<span class="iconfont">&#xe61d;</span>
+					<span class="zi">安踏安大专卖店</span>
+					<span class="iconfont" style="margin-left: -5px;">&#xe6ef;</span>
+					<span class="zip" style="margin-left: 130px;">领券</span>
+			    </div>
+				<div class="pin_shen">
+					<div class="yuan">
+						<div class="iconfont">&#xe609;</div>
+					</div>
+					<div class="img">
+						<img src="imgshang/O1CN01wC50A91YwpuVugDsk_!!1946733124.jpg_190x190q90_.webp" alt="" />
+					</div>
+					<div class="wen">
+						<div class="wen_a">安踏运动鞋男鞋官网正品春季夏季网面透气跑步鞋断码清仓休闲鞋男</div>
+						    <ul class="wen_b">
+								<li>￥150</li>
+								<li>-</li>
+								<li>1</li>
+								<li>+</li>
+						    </ul>
+					   </div>
+				    </div>	
+			    </div>
+		   <div class="liu">
+		   	<div class="iconfont">&#xe609;<span>全选</span></div>
+		   	<div class="liu_a">合计:<span>￥228.9</span></div>
+		   	<div class="liu_b">结算(￥228.9)</div>
+		   </div>
+		    
+		    
+		
+		 <ul id="di">
+				<li>
+					<a href="爱淘宝首页.html">
+						<span class="iconfont">&#xe628;</span>
+					    <div>首页</div>
+					</a>
+				</li>
+				<li>
+					<a href="商品分类.html">
+						<span class="iconfont">&#xe615;</span>
+					<div>分类</div>
+					</a>
+				</li>
+				<li>
+					<a href="购物车.html"  style="color: #FF5000;">
+						<span class="iconfont">&#xe605;</span>
+					    <div>购物车</div>
+					</a>
+				</li>
+				<li>
+					<a href="订单列表.html">
+						<span class="iconfont">&#xe60a;</span>
+					    <div>订单列表</div>
+					</a>
+				</li>
+				<li>
+					<a href="爱淘宝首页.html">
+						<span class="iconfont">&#xe620;</span>
+					    <div>我的淘宝</div>
+					</a>
+				</li>
+				
+			</ul>
+		</div>
+	</body>
+</html>

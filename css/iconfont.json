@@ -1,0 +1,86 @@
+{
+  "id": "1967255",
+  "name": "淘宝",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "12610913",
+      "name": "不可查看",
+      "font_class": "bukechakan",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "16123211",
+      "name": "淘宝",
+      "font_class": "taobao1",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    },
+    {
+      "icon_id": "577393",
+      "name": "顶部",
+      "font_class": "dingbu",
+      "unicode": "e76c",
+      "unicode_decimal": 59244
+    },
+    {
+      "icon_id": "1901658",
+      "name": "券",
+      "font_class": "quan",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "4933869",
+      "name": "点",
+      "font_class": "dian",
+      "unicode": "ec1e",
+      "unicode_decimal": 60446
+    },
+    {
+      "icon_id": "2854",
+      "name": "爱淘宝",
+      "font_class": "aitaobao",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "1032407",
+      "name": "星星 (1)",
+      "font_class": "xingxing1",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "1380079",
+      "name": "首页",
+      "font_class": "icon-test",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "4889788",
+      "name": "头像",
+      "font_class": "touxiang",
+      "unicode": "e620",
+      "unicode_decimal": 58912
+    },
+    {
+      "icon_id": "8089712",
+      "name": "红包",
+      "font_class": "iconfront-",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "10664706",
+      "name": "搜索 search",
+      "font_class": "search",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    }
+  ]
+}

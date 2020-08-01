@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>爱淘宝首页</title>
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,
+   maximum-scale=1.0, user-scalable=0">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    #wrap{
+    	width: 375px;
+    	height: 2400px;
+    	margin: auto;
+    	background-color: #F2F2F2;
+    }
+   body{
+   	position: relative;
+   }
+    #header{
+      width: 375px;
+      height: 145px;
+      background-image: linear-gradient(122deg,#ff8b58 0,#ff3e3e 41%,#ff203c 100%);
+      border-radius: 0 0 5% 5%;
+     
+    }
+    #logo_wrap{
+      width: 351px;
+      height: 44px;
+      margin: auto;
+      text-align: center;
+      line-height: 44px;
+      color: white;
+      font-size: 25px;
+      
+    }
+    #logo_wrap .iconfont{
+    	font-size: 35px;
+    	font-weight: 400;
+    }
+    #sou{
+    	width: 351px;
+    	height: 36px;
+    	margin: auto;
+    	border: 1px solid white;
+    	border-radius: 30px;
+    	text-align: center;
+    	line-height: 36px;
+    	opacity: 0.6;
+    }
+    #sou span{
+    	color: white;
+    	font-size: 14px;
+    }
+    #lun{
+    	width: 351px;
+    	height: 120px;
+    	margin: auto;
+    	position: relative;
+    	bottom: 60px;
+    	border-radius: 5px;
+    	
+    }
+    #lun #lun_img, #lun #lun_img img{
+    	width: 351px;
+    	height: 110px;
+    }
+    #dian{
+    	width: 351px;
+    	height: 10px;
+    	position: absolute;
+    	bottom: 0;
+    	text-align: center;
+    	
+    }
+    #dian span{
+    	font-size: 20px;
+    	color: gainsboro;
+    	margin-left: -15px;
+    }
+    #nav{
+    	width: 351px;
+    	height: 90px;
+    	list-style: none;
+    	margin: auto;
+    	margin-top: -56px;
+    	display: flex;
+    	margin-bottom: 10px;
+    }
+    #nav li{
+    	flex: 5;
+    	text-align: center;
+    }
+    #nav li img{
+    	width: 43px;
+    	height: 43px;
+    	margin-top: 15px;
+    } 
+    #nav li p{
+    	font-size: 12px;
+    	margin-top: 5px;
+    }
+    .nav_img{
+    	width: 351px;
+    	height: 50px;
+    	background-image: url("img/1577636333008-702-110.webp");
+    	background-size: 100% 100%;
+    	margin: auto;
+    	border-radius: 13px 13px 0 0;
+    	line-height: 50px;
+    }
+    .pin{
+    	width: 351px;
+    	height: 147px;
+    	margin: auto;
+    	display: flex;
+    	text-align: center;
+    	color: ;
+    	background-color: white;
+    	border-radius: 0 0 13px 13px;
+    	
+    }
+    .pin div{
+    	width: 100px;
+    	height: 125px;
+    	margin-left: 11px;
+    	margin-top: 10px;
+    }
+    .pin div img{
+    	width: 90px;
+    	height: 90px;
+    }
+    .pin div p{
+    	margin-top: 2px;
+    	opacity: 0.5;
+    	text-decoration: line-through;
+    	
+    }
+    .pin div p,.pin div .p1{
+    	font-size: 12px;
+    	
+    }
+    .pin div .p2{
+    	font-size: 14px;
+    	font-weight: bold;
+    	color: red;
+    }
+    #mei{
+    	width: 351px;
+    	height: 258px;
+    	margin: auto;
+    	margin-top: 20px;
+    }
+    .mei_img{
+    	width: 351px;
+    	height: 37px;
+    	line-height: 37px;
+    	background-color: white;
+    	border-radius: 13px 13px 0 0;
+    }
+    .mei_img img{
+    	width: 85px;
+    	height: 15px;
+    	margin-left: 10px;
+    }
+    #mei_p{
+    	width: 351px;
+    	height: 195px;
+    	background-color: white;
+    	display: flex;
+    }
+    #mei_p div{
+    	width: 100px;
+    	height: 170px;
+    	margin-top: 10px;
+    	margin-left: 10px;
+    	
+    }
+    #mei_p div img{
+    	width: 100px;
+    	height: 100px;
+    }
+    #mei_p div h3{
+    	width: 100px;
+    	height: 16px;
+    	font-size: 12px;
+    	opacity: 0.6;
+    	white-space: nowrap;
+    	overflow: hidden;
+    	text-overflow: ellipsis;
+    }
+    #mei_p div p{
+    	font-size: 13px;
+    	color: deeppink;
+    	margin-left: 2px;
+    	margin-top: 2px;
+    }
+    #mei_p div .t1{
+    	font-size: 11px;
+    	opacity: 0.6;
+    }
+    #mei_p div .t2{
+    	color: hotpink;
+    }
+    #mei ul{
+    	width: 174px;
+    	list-style: none;
+    	display: flex;
+    	margin: auto;
+    	
+    }
+    #mei ul li{
+    	width: 29px;
+    	height: 2px;
+    	background-color: black;
+    	opacity: 0.6;
+    	
+    }
+    #mei #down{
+    	width: 351px;
+    	height: 26px;
+    	background-color: white;
+    	border-radius: 0 0 13px 13px;
+    }
+    #cai{
+    	width: 375px;
+    	height: 50px;
+    	text-align: center;
+    	line-height: 50px;
+    	font-weight: bold;
+    	color: orangered;
+    }
+    #hao{
+    	width: 363px;
+    	height: 1450px;
+    	list-style: none;
+    	display: flex;
+    	flex-wrap: wrap;
+    	margin: auto;
+    	align-content: space-between;
+    	justify-content: space-between;
+    }
+    #hao li{
+    	width: 171px;
+    	height: 280px;
+    	background-color: white;
+    	border-radius: 13px 13px 13px 13px;
+    	
+    }
+    #hao li img{
+    	width: 171px;
+    	height: 171px;
+    	margin-top: 10px;
+	    }
+     #hao li div{
+     	width: 155px;
+     	height: 32px;
+     	margin-left: 5px;
+     	overflow: hidden;
+     	text-overflow: ellipsis;
+     	font-size: 13px;
+     	margin-top: 1px;
+     }
+     #hao li div a{
+     	text-decoration: none;
+     	color: black;
+     	overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+     }
+     
+     #hao li p{
+     	width: 60px;
+     	height: 15px;
+     	border: 1px solid hotpink;
+     	margin-top: 2px;
+     	margin-left: 5px;
+     	font-size: 5px;
+     	color: hotpink;
+     	border-radius: 5px;
+     }
+     #hao li .h1,.h3{
+     	font-size: 13px;
+     	margin-left: 5px;
+     	opacity: 0.6;
+     }
+     #hao li .h2{
+     	font-weight: bold;
+     	color: deeppink;
+     	margin-left: 5px;
+     }
+     #hao li .h3{
+     	text-decoration: line-through;
+     }
+     #di{
+   		width: 375px;
+   		height: 43px;
+   		list-style: none;
+   		background-color: white;
+   		display: flex;
+   		position: fixed;
+   		bottom: 0;
+   	}
+   	#di li{
+   		flex: 5;
+   		text-align: center;
+   	}
+   	#di li .iconfont{
+   		font-size: 20px;
+   	}
+   	
+   	#di li a{
+   		text-decoration: none;
+   		font-size: 12px;
+   		opacity: 0.7;
+   		color: black;
+   	}
+   	
+     
+     /*#dao{
+     	width: 375px;
+     	height: 44px;
+     	display: flex;
+     	background-color: white;
+     	position: fixed;
+     	bottom: 0;
+     }
+     #dao .iconfont{
+     	flex: 4;
+     	font-size: 25px;
+     	font-weight: bold;
+     	text-align: center;
+     	opacity: 0.6;
+     }
+     #dao p{
+     	font-size: 12px;
+     	margin-bottom: 2px;
+     }*/
+    #ding{
+    	width: 50px;
+    	height: 50px;
+    	border: 1px solid black;
+    	text-align: center;
+    	border-radius: 50%;
+    	opacity: 0.6;
+    	position: absolute;
+    	right: 20px;
+    	bottom: 100px;
+    	position: fixed;
+    }
+    #ding .iconfont{
+    	font-size: 25px;
+    }
+  </style>
+</head>
+<body>
+<div id="wrap">
+   <div id="header">
+     <div id="logo_wrap">
+        <span class="iconfont">&#xe600;</span>
+     </div>
+     <div id="sou">
+     	<span class="iconfont">&#xe602;</span>
+     	<span class="text">T恤</span>
+     </div>
+   </div>
+   <div id="lun">
+   	<div id="lun_img">
+   		<img src="img/TB1PIV7czMZ7e4jSZFOSut7epXa.jpg_q75.jpg"/>
+   	</div>
+   	<div id="dian">
+	   	<span class="iconfont">&#xec1e;</span>
+	   	<span class="iconfont">&#xec1e;</span>
+	   	<span class="iconfont" style="color: white;">&#xec1e;</span>
+	   	<span class="iconfont">&#xec1e;</span>
+	   	<span class="iconfont">&#xec1e;</span>
+	   	<span class="iconfont">&#xec1e;</span>
+	   	<span class="iconfont">&#xec1e;</span>
+	   	<span class="iconfont">&#xec1e;</span>
+    </div>
+   </div>
+   <ul id="nav">
+   	<li>
+   		<img src="img/TB1rOnbIFXXXXceXpXXrywt4VXX-120-120.png" alt="" />
+   		<p>我的淘宝</p>
+   	</li>
+   	<li>
+   		<img src="img/TB1g_AHgzDpK1RjSZFrXXa78VXa-120-120.jpg" alt="" />
+   		<p>聚划算</p>
+   	</li>
+   	<li>
+   		<img src="img/TB17s9_iNjaK1RjSZFAXXbdLFXa-86-86.png" alt="" />
+   		<p>天猫超市</p>
+   	</li>
+   	<li>
+   		<img src="img/TB18l5SiHvpK1RjSZPiXXbmwXXa-86-86.png" alt="" />
+   		<p>淘热卖</p>
+   	</li>
+   	<li>
+   		<img src="img/TB1P8IyAq61gK0jSZFlXXXDKFXa-114-114.png" alt="" />
+   		<p>优惠雷达</p>
+   	</li>
+   </ul>
+   <div id="chao">
+   	<div class="nav_img">
+   		<span style="font-size: 20px; font-weight: bold; color: white; margin-left: 60px;">天猫超市</span>
+   		<span style="font-size: 10px; color: white;">米面粮油送到家</span>
+   	</div>
+   	<div class="pin">
+   		<div>
+   			<img src="img/O1CN01FwtOdK1sVchiN9fRi_!!1587415772.jpg_600x600q75s150.jpg_.webp" alt="" />
+   			<p>￥29.9</p>
+   			<span class="p1">到手约</span><span class="p2">￥19.90</span>
+   		</div>
+   		<div>
+   			<img src="img/O1CN01oUQNXL1siRnGn7s7g_!!2-item_pic.png_600x600.jpg_.webp" alt="" />
+   			<p>￥19.9</p>
+   			<span class="p1">到手约</span><span class="p2">￥7.45</span>
+   		</div>
+   		<div>
+   			<img src="img/O1CN011yd3Dk23WxdLWlxpI_!!1115787264.jpg_600x600q75s150.jpg_.webp" alt="" />
+   			<p>￥59.9</p>
+   			<span class="p1">到手约</span><span class="p2">￥39.00</span>
+   		</div>
+   	</div>
+   </div>
+   <div id="mei">
+   	<div class="mei_img">
+   		<img src="img/TB1cE6hXv1H3KVjSZFBXXbSMXXa-171-31.png"/>
+   	</div>
+   	<div id="mei_p">
+   		<div >
+   			<img src="img/TB1W7QYjp67gK0jSZPfXXahhFXa.png_200x200q75.jpg_.webp" alt="" />
+   			<h3>南京同仁堂 氨基酸全营养蛋白粉植物蛋白质中老年增强高钙抵抗力</h3>
+   			<p class="iconfont">&#xe601; 80元券</p>
+   			<span class="t1">券后价</span><span class="t2">￥38.00</span>
+   		</div>
+   		<div>
+   			<img src="img/TB1XrDhnV67gK0jSZPfXXahhFXa.png_200x200q75.jpg_.webp" alt="" />
+   			<h3>FQ芙清祛痘清凉面膜型医美医用术后敏感肌修复粉刺透明质酸敷料贴</h3>
+   			<p class="iconfont">&#xe601;100元券</p>
+   			<span class="t1">券后价</span><span class="t2">￥58.00</span>
+   		</div>
+   		<div>
+   			<img src="img/O1CN01qYuS6v2Mmy8VV3R4h_!!0-item_pic.jpg_200x200q75.jpg_.webp" alt="" />
+   			<h3>Aola'KD香氛修护发膜头发护理干枯烫染受损柔顺头发防毛躁护发素</h3>
+   			<p class="iconfont">&#xe601; 90元券</p>
+   			<span class="t1">券后价</span><span class="t2">￥38.00</span>
+   		</div>
+   		<br />
+   		
+   	</div>
+   	<div id="down">
+   	 <ul>
+   		<li></li>
+   		<li></li>
+   		<li style="background-color: hotpink;"></li>
+   		<li></li>
+   		<li></li>
+   		<li></li>
+   	 </ul>
+   	</div>
+   </div>
+   <div id="cai">猜你喜欢</div>
+   <ul id="hao">
+   	<li>
+   		<img src="img/O1CN014YZVRE1ez1UAO5DSz_!!0-item_pic.jpg_600x600q75s150.jpg_.webp" alt="" />
+   		<div>南极人男士内裤平角裤纯棉透气抗菌裆夏季薄款裤衩四角裤短底裤头</div>
+   		<p>领3元优惠券</p>
+   		<span class="h1">到手约</span><span class="h2">￥26.90</span><br />
+   		<span class="h1">淘宝价</span><span class="h3">￥29.9</span>
+   	</li>
+   	<li>
+   		<img src="img/O1CN01BSxNKV1UqBhRvCePk_!!0-item_pic.jpg_600x600q75s150.jpg_.webp" alt="" />
+   		<div>雨衣摩托车电动车雨衣成人单人电瓶车户外骑行加大加厚男女士雨披</div>
+   		<p>领5元优惠券</p>
+   		<span class="h1">到手约</span><span class="h2">￥17.90</span><br />
+   		<span class="h1">淘宝价</span><span class="h3">￥22.9</span>
+   	</li>
+   	<li>
+   		<img src="img/O1CN01QwwguR1yWR4YE7Ihp_!!0-item_pic.jpg_600x600q75s150.jpg_.webp" alt="" />
+   		<div>荣炫洗发水沐浴露套装组合装古龙香水沐浴液香味持久留香男士专用</div>
+   		<p>领20元优惠券</p>
+   		<span class="h1">到手约</span><span class="h2">￥39.90</span><br />
+   		<span class="h1">淘宝价</span><span class="h3">￥59.9</span>
+   	</li>
+   	<li>
+   		<img src="img/O1CN01mpSZPr1JSPN9QX4bQ_!!0-item_pic.jpg_600x600q75s150.jpg_.webp" alt="" />
+   		<div>肖叔叔螺蛳粉柳州正宗螺蛳粉广西特产螺丝粉330g*3袋方便速食米线</div>
+   		<p>领10元优惠券</p>
+   		<span class="h1">到手约</span><span class="h2">￥21.90</span><br />
+   		<span class="h1">淘宝价</span><span class="h3">￥31.9</span>
+   	</li>
+   	<li>
+   		<img src="img/O1CN01xBYBIa26r3rZsXRg6_!!0-item_pic.jpg_600x600q75s150.jpg_.webp" alt="" />
+   		<div>蜀中成人复合益生菌大人儿童孕妇肠胃肠道益生元冻干粉调理活性菌</div>
+   		<p>领45元优惠券</p>
+   		<span class="h1">到手约</span><span class="h2">￥13.00</span><br />
+   		<span class="h1">淘宝价</span><span class="h3">￥58</span>
+   	</li>
+   	<li>
+   		<img src="img/O1CN01FwtOdK1sVchiN9fRi_!!1587415772.jpg_600x600q75s150.jpg_.webp" alt="" />
+   		<div>聪妈抽纸实惠装家用整箱大包卫生纸巾擦手餐巾纸批面纸抽特价大号</div>
+   		<p>领3元优惠券</p>
+   		<span class="h1">到手约</span><span class="h2">￥26.90</span><br />
+   		<span class="h1">淘宝价</span><span class="h3">￥29.9</span>
+   	</li>
+   	<li>
+   		<img src="img/O1CN01wOUK2F1udWkZscAgm_!!0-item_pic.jpg_600x600q75s150.jpg_.webp" alt="" />
+   		<div>南极人女士内裤女纯棉100%全棉裆抗菌中腰大码妈妈高腰收腹三角裤</div>
+   		<p>领10元优惠券</p>
+   		<span class="h1">到手约</span><span class="h2">￥29.60</span><br />
+   		<span class="h1">淘宝价</span><span class="h3">￥39.6</span>
+   	</li>
+   	<li>
+   		<img src="img/O1CN01zaEbgO1UytEeG12qW_!!0-item_pic.jpg_600x600q75s150.jpg_.webp" alt="" />
+   		<div>拜格菜刀家用超快锋利厨房刀具套装厨师专用不锈钢切肉切片砍骨刀</div>
+   		<p>领10元优惠券</p>
+   		<span class="h1">到手约</span><span class="h2">￥9.90</span><br />
+   		<span class="h1">淘宝价</span><span class="h3">￥19.9</span>
+   	</li>
+   	<li>
+   		<img src="img/O1CN011rpaCO2N1ASKCJiIS_!!755579902-0-lubanu-s.jpg_600x600q75s150.jpg_.webp" alt="" />
+   		<div>薇娅推荐卡姿兰口红水吻雾吻唇膏哑光M05奶油萝卜女大牌正品小众</div>
+   		<p>领30元优惠券</p>
+   		<span class="h1">到手约</span><span class="h2">￥89</span><br />
+   		<span class="h1">淘宝价</span><span class="h3">￥119</span>
+   	</li>
+   	<li>
+   		<img src="imgshang/TB2hO5BEWSWBuNjSsrbXXa0mVXa_!!2938563517.jpg_200x200Q50s50.jpg" alt="" />
+   		<div>
+   			<a href="商品详情.html">酷睿冰尊笔记本散热器14寸15.6寸苹果联想华硕戴尔惠普游戏本通用</a>
+   		</div>
+   		<p>领10元优惠券</p>
+   		<span class="h1">到手约</span><span class="h2">￥29.9</span><br />
+   		<span class="h1">淘宝价</span><span class="h3">￥39.9</span>
+   	</li>
+   </ul>
+   <div id="xia"></div>
+   <ul id="di">
+				<li>
+					<a href="爱淘宝首页.html" style="color: #FF5000;">
+						<span class="iconfont">&#xe628;</span>
+					    <div>首页</div>
+					</a>
+				</li>
+				<li>
+					<a href="商品分类.html">
+						<span class="iconfont">&#xe615;</span>
+					<div>分类</div>
+					</a>
+				</li>
+				<li>
+					<a href="购物车.html">
+						<span class="iconfont">&#xe605;</span>
+					    <div>购物车</div>
+					</a>
+				</li>
+				<li>
+					<a href="订单列表.html">
+						<span class="iconfont">&#xe60a;</span>
+					    <div>订单列表</div>
+					</a>
+				</li>
+				<li>
+					<a href="爱淘宝首页.html">
+						<span class="iconfont">&#xe620;</span>
+					    <div>我的淘宝</div>
+					</a>
+				</li>
+				
+			</ul>
+ <!--<div id="dao">
+	<div class="iconfont">&#xe628;
+	  <p>首页</p>
+	</div>
+	<div class="iconfont">&#xe61a;
+	  <p>领补贴</p>
+	</div>
+	<div class="iconfont">&#xe641;
+	  <p>找优惠</p>
+	</div>
+	<div class="iconfont" style="color: orangered; opacity: 1;">&#xe620;
+	  <p>我的淘宝</p>
+	</div>
+ </div>-->
+</div> 
+<div id="ding">
+	<div class="iconfont">&#xe76c;</div>
+	<p>顶部</p>
+</div>
+
+</body>
+</html>

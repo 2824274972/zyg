@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品分类</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,
+   maximum-scale=1.0, user-scalable=0">
+   <style type="text/css">
+   	*{
+   		margin: 0;
+   		padding: 0;
+   	}
+   	
+   	#wrap{
+   		width: 375px;
+   		height: 1200px;
+   		position: relative;
+   	}
+   	
+   	#header{
+   		width: 375px;
+   		height: 44px;
+   		background-color: #EEEEEE;
+   		line-height: 44px;
+   		position: fixed;
+   		top: 0;
+   		z-index: 10;
+   	}
+   	
+   	#header h4{
+   		font-weight: 400;
+   		font-size: 14px;
+   		margin-left: 15px;
+   	}
+   	
+   	#lan{
+   		width: 86px;
+   		height: 630px;/*1740*/
+   		list-style: none;
+   	}
+   	
+   	#lan li{
+   		width: 86px;
+   		height: 60px;
+   		background-color: #eeeeee;
+   		border-bottom: 1px solid #E1E1E1;
+   		text-align: center;
+   		line-height: 60px;
+   		color: #9B9B9B;
+   		font-size: 14px;
+   	}
+   	
+   	#lan li:nth-child(1){
+   		margin-top: 44px;
+   		font-size: 14px;
+   		background-color: white;
+   		color: black;
+   		position: fixed;
+   		top: 0;
+   		left: 0;
+   	}
+   	
+   	#lan li:nth-child(2){
+   		margin-top: 102px;
+   	}
+   	
+   	#right{
+   		width: 285px;
+   		height: 1150px;
+   		position: absolute;
+   		top: 0;
+   		right: 0;
+   	}
+   	
+   	#wu{
+   		width: 266px;
+   		height: 260px;
+   	}
+   	
+   	.wu h4,.san h4{
+   		width: 266px;
+   		height: 44px;
+   		line-height: 55px;
+   		font-size: 14px;
+   		margin-left: 5px;
+   		opacity: 0.6;
+   	}
+   	
+   	.wu .pin{
+   		list-style: none;
+   		width: 266px;
+   		height: 216px;
+   		margin-left: 15px;
+        margin-top: 12px;
+   		display: flex;
+   		flex-wrap: wrap;
+   		justify-content: space-between;
+   		align-content: space-between;
+   	}
+   	
+   	.wu .pin li{
+   		width: 85px;
+   		height: 100px;
+   		text-align: center;
+   	}
+   	
+   	.wu .pin li img,.san .pin1 li img{
+   		width: 67px;
+   		height: 67px;
+   	}
+   	
+   	.wu .pin li p,.san .pin1 li p{
+   		font-size: 14px;
+   		opacity: 0.6;
+   	}
+   	
+   	.san{
+   		width: 266px;
+   		height: 160px;
+   	}
+   	
+   	.san .pin1{
+   		width: 266px;
+   		height: 100px;
+   		margin-left: 15px;	
+   		margin-top: 12px;
+   		list-style: none;
+   		display: flex;
+   	}
+   	
+   	.san .pin1 li{
+   		width: 85px;
+   		height: 100px;
+   		text-align: center;
+   	}
+   </style>
+	</head>
+	<body>
+		<div id="wrap">
+			<div id="header">
+				<h4>全部分类</h4>
+			</div>
+			<ul id="lan">
+				<li>为你推荐</li>
+				<li>国际大牌</li>
+				<li>天猫国际</li>
+				<li>女装</li>
+				<li>女鞋</li>
+				<li>男装</li>
+				<li>男鞋</li>
+				<li>内衣</li>
+				<li>母婴</li>
+				<li>手机</li>
+				<li>数码</li>
+				<li>家电</li>
+				<li>美妆</li>
+				<li>箱包</li>
+				<li>运动</li>
+				<li>户外</li>
+				<li>家装</li>
+				<li>家纺</li>
+				<li>居家百货</li>
+				<li>鲜花宠物</li>
+				<li>配饰</li>
+				<li>食品</li>
+				<li>生鲜</li>
+				<li>汽车摩托</li>
+				<li>医药</li>
+				<li>图书</li>
+				<li>通信</li>
+				<li>洗护</li>
+				<li>乐器</li>
+			</ul>
+			<div id="right">
+				<div class="wu">
+					<h4>女装</h4>
+					<ul class="pin">
+						<li>
+							<img src="imgs/TB1YTCkqXOWBuNjy0FiXXXFxVXa-100-100.jpg_140x140Q50s50.jpg_.webp" alt="" />
+							<p>连衣裙</p>
+						</li>
+						<li>
+							<img src="imgs/TB1I0W2qf1TBuNjy0FjXXajyXXa-100-100.jpg_140x140Q50s50.jpg_.webp" alt="" />
+							<p>T恤</p>
+						</li>
+						<li>
+							<img src="imgs/TB1XzKuqXuWBuNjSspnXXX1NVXa-100-100.jpg_140x140Q50s50.jpg_.webp" alt="" />
+							<p>衬衫</p>
+						</li>
+						<li>
+							<img src="imgs/TB1JjmnqkOWBuNjSsppXXXPgpXa-100-100.jpg_140x140Q50s50.jpg_.webp" alt="" />
+							<p>雪纺裙</p>
+						</li>
+						<li>
+							<img src="imgs/TB1kO5nqkOWBuNjSsppXXXPgpXa-100-100.jpg_140x140Q50s50.jpg_.webp" alt="" />
+							<p>裤子</p>
+						</li>
+						<li>
+							<img src="imgs/TB1H6enqkOWBuNjSsppXXXPgpXa-100-100.jpg_140x140Q50s50.jpg_.webp" alt="" />
+							<p>牛仔裤</p>
+						</li>
+					</ul>
+				</div>
+				<div class="san">
+					<h4>女鞋</h4>
+					<ul class="pin1">
+						<li>
+							<img src="imgs/TB1gh88SVXXXXciaXXXXXXXXXXX-100-100.jpg_140x140Q50s50.jpg_.webp" alt="" />
+							<p>小白鞋</p>
+						</li>
+						<li>
+							<img src="imgs/TB1yNqkSVXXXXXBXVXXXXXXXXXX-100-100.jpg_140x140Q50s50.jpg_.webp" alt="" />
+							<p>乐福鞋</p>
+						</li>
+						<li>
+							<img src="imgs/TB1lwyrSVXXXXbCXFXXXXXXXXXX-100-100.jpg_140x140Q50s50.jpg_.webp" alt="" />
+							<p>草编鞋</p>
+						</li>
+					</ul>
+				</div>
+				<div class="wu">
+					<h4>男装</h4>
+					<ul class="pin">
+						<li>
+							<img src="imgs/TB1h.PxqmBYBeNjy0FeXXbnmFXa-100-100.png_140x140Q50s50.jpg_.webp" alt="" />
+							<p>T恤</p>
+						</li>
+						<li>
+							<img src="imgs/TB1faWZqhGYBuNjy0FnXXX5lpXa-100-100.png_140x140Q50s50.jpg_.webp" alt="" />
+							<p>衬衫</p>
+						</li>
+						<li>
+							<img src="imgs/TB1EMREqbSYBuNjSspiXXXNzpXa-100-100.png_140x140Q50s50.jpg_.webp" alt="" />
+							<p>POLO衫</p>
+						</li>
+						<li>
+							<img src="imgs/TB1vUWzqkCWBuNjy0FaXXXUlXXa-100-100.png_140x140Q50s50.jpg_.webp" alt="" />
+							<p>夹克</p>
+						</li>
+						<li>
+							<img src="imgs/TB1qW4YqbGYBuNjy0FoXXciBFXa-100-100.png_140x140Q50s50.jpg_.webp" alt="" />
+							<p>休闲裤</p>
+						</li>
+						<li>
+							<img src="imgs/TB11StUqXGWBuNjy0FbXXb4sXXa-100-100.png_140x140Q50s50.jpg_.webp" alt="" />
+							<p>牛仔裤</p>
+						</li>
+					</ul>
+				</div>
+				<div class="wu">
+					<h4>家电</h4>
+					<ul class="pin">
+						<li>
+							<img src="imgs/TB1IQsKGVXXXXXLXpXXMxXJVFXX-100-100.jpg_140x140Q50s50.jpg_.webp" alt="" />
+							<p>平板电视</p>
+						</li>
+						<li>
+							<img src="imgs/TB1TcZzGVXXXXc_apXXMxXJVFXX-100-100.jpg_140x140Q50s50.jpg_.webp" alt="" />
+							<p>洗衣机</p>
+						</li>
+						<li>
+							<img src="imgs/TB19_gEGVXXXXbAXVXXMxXJVFXX-100-100.jpg_140x140Q50s50.jpg_.webp" alt="" />
+							<p>冰箱</p>
+						</li>
+						<li>
+							<img src="imgs/TB18cUQGVXXXXanXXXXMxXJVFXX-100-100.jpg_140x140Q50s50.jpg_.webp" alt="" />
+							<p>电饭煲</p>
+						</li>
+						<li>
+							<img src="imgs/TB1do7HGVXXXXaoXVXXMxXJVFXX-100-100.jpg_140x140Q50s50.jpg_.webp" alt="" />
+							<p>空气净化器</p>
+						</li>
+						<li>
+							<img src="imgs/TB1CjwPGVXXXXa1XXXXMxXJVFXX-100-100.jpg_140x140Q50s50.jpg_.webp" alt="" />
+							<p>扫地机器人</p>
+						</li>
+					</ul>
+				</div>
+				<div class="san">
+					<h4>美妆</h4>
+					<ul class="pin1">
+						<li>
+							<img src="imgs/TB1ZsMAGVXXXXcMaXXXMxXJVFXX-100-100.jpg_140x140Q50s50.jpg_.webp" alt="" />
+							<p>护肤套装</p>
+						</li>
+						<li>
+							<img src="imgs/TB1IDECGVXXXXXOXVXXMxXJVFXX-100-100.jpg_140x140Q50s50.jpg_.webp" alt="" />
+							<p>面膜</p>
+						</li>
+						<li>
+							<img src="imgs/TB19M7HGVXXXXaGXpXXMxXJVFXX-100-100.jpg_140x140Q50s50.jpg_.webp" alt="" />
+							<p>身体护理</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

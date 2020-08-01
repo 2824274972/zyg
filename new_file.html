@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>加入购物车</title>
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,
+   maximum-scale=1.0, user-scalable=0">
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#wrap{
+				width: 375px;
+				height: 667px;
+				background-color:#7B7B7B;
+			}
+			/*#fu{
+				display: none;
+			}*/
+			.button:hover #fu{
+				
+			}
+			#fu{
+				width: 375px;
+				height: 532px;
+				background-color: white;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				z-index: 10;				
+			}
+			#fu .fu_head{
+				width: 375px;
+				height: 92px;
+				position: relative;
+			}
+			#fu .fu_head .img{
+				width: 100px;
+				height: 100px;
+				border-radius: 5px;
+				border: 1px solid black;
+				padding: 1px;
+				position: absolute;
+				bottom: 25px;
+				left: 15px;
+			}
+			#fu .fu_head .img img{
+				width: 100%;
+				height: 100%;
+			}
+			.fu_head_a{
+				width: 230px;
+				height: 72px;
+				position: absolute;
+				top: 10px;
+				right: 15px;
+			}
+			.fu_head_a .a{
+				width: 210px;
+				font-size: 16px;
+				color: #FF1F4E;
+			}
+			.fu_head_a .b,.fu_head_a .c{
+				font-size: 13px;
+			}
+			.fu_head_a .iconfont{
+				font-size: 20px;
+				position: fixed;
+				top: 145px;
+				right: 15px;
+			}
+			.fu_content{
+				width: 345px;
+				height: 393px;
+				margin: auto;
+			}
+			.fu_content h2{
+				font-size: 13px;
+				color: #666666;
+				font-weight: 350;
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+			.fu_content .lei{
+				width: 345px;
+				height: 248px;
+				list-style: none;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-around;
+				align-items: center;
+			}
+			.fu_content .lei li{
+				width: 138px;
+				height: 34px;
+				border-radius: 10px;
+				background-color: #F5F5F5;
+
+			}
+			.fu_content .lei li .imgs{
+				display: inline-block;
+				width: 24px;
+				height: 24px;
+				margin-left: 11px;
+				margin-top: 5px;
+			}
+			.fu_content .lei li .imgs img{
+				width: 24px;
+				height: 24px;
+			}
+			.fu_content .lei li span{
+				font-size: 13px;
+				margin-left: 5px;
+				
+			}
+			.number{
+				width: 345px;
+				height: 57px;
+				display: flex;
+				line-height: 57px;
+				border-top: 1px solid #E5E5E5;
+				border-bottom: 1px solid #E5E5E5;
+			}
+			.number div:nth-child(1){
+				width: 200px;
+				height: 57px;
+				margin-right: 50px;
+				font-size: 13px;
+				color: #666666;
+			}
+			.number div:nth-child(2){
+				color: #666666;
+			}
+			.number div:nth-child(2),.number div:nth-child(3),.number div:nth-child(4){
+				width: 30px;
+				height: 34px;
+				text-align: center;
+				line-height: 34px;
+				margin-top: 11px;
+				background-color: #F5F5F5;
+				font-size: 20px;
+			}
+			.fu_bottom{
+				width: 375px;
+				height: 48px;
+				background-color: #FF0036;
+				text-align: center;
+				line-height: 48px;
+				font-size: 15px;
+				color: white;
+			}
+			/*.button{
+				width: 100px;
+				height: 30px;
+				background-color: orangered;
+				text-align: center;
+				line-height: 30px;
+				color: white;
+			}*/
+			
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+		<div id="fu">
+			<div class="fu_head">
+				<div class="img">
+					<img src="imgshang/TB2hO5BEWSWBuNjSsrbXXa0mVXa_!!2938563517.jpg_200x200Q50s50.jpg" alt="" />
+				</div>
+				<div class="fu_head_a">
+						<div class="a">￥29.9-52.9</div>
+						<div class="b">库存89037件</div>
+						<div class="c">请选择：颜色分类</div>
+						<div class="iconfont">&#xe607;</div>
+			    </div>
+			</div>
+			<div class="fu_content">
+				<h2>颜色分类</h2>
+				<ul class="lei">
+					<li>
+					    <div class="imgs">
+					    	<img src="imgshang/O1CN012iXO6h1bqpYJ47P1M_!!2938563517.jpg_80x80 (1).jpg"/>
+					    </div>
+					    <span>象牙白 旗舰版</span>
+					</li>
+					<li>
+						 <div class="imgs">
+					    	<img src="imgshang/O1CN01zmWJj31bqpYH0bdux_!!2938563517.jpg_80x80.jpg"/>
+					    </div>
+					    <span>碧海蓝 旗舰版</span>
+					</li>
+					<li>
+						 <div class="imgs">
+					    	<img src="imgshang/O1CN010T09kW1bqpYHWE6fu_!!2938563517.jpg_80x80.jpg"/>
+					    </div>
+					    <span>骑士黑 旗舰版</span>
+					</li>
+					<li>
+						 <div class="imgs">
+					    	<img src="imgshang/O1CN01NdxFqV1bqpXWtI60f_!!2938563517.jpg_80x80.jpg"/>
+					    </div>
+					    <span>高级灰 旗舰版</span>
+					</li>
+					<li>
+						 <div class="imgs">
+					    	<img src="imgshang/TB2u10ZtpXXXXbQXXXXXXXXXXXX_!!2938563517.jpg_80x80.jpg"/>
+					    </div>
+					    <span>象牙白 豪华版</span>
+					</li>
+					<li>
+						 <div class="imgs">
+					    	<img src="imgshang/TB2Bc4MtpXXXXXfXpXXXXXXXXXX_!!2938563517.jpg_80x80.jpg"/>
+					    </div>
+					    <span>碧海蓝 豪华版</span>
+					</li>
+					<li>
+						 <div class="imgs">
+					    	<img src="imgshang/O1CN017TAwpf1bqpXXericS_!!2938563517.jpg_80x80.jpg"/>
+					    </div>
+					    <span>魅力粉 豪华版</span>
+					</li>
+					<li>
+						 <div class="imgs">
+					    	<img src="imgshang/O1CN01BKb5PV1bqpRkj5yv8_!!2938563517.jpg_80x80.jpg"/>
+					    </div>
+					    <span>骑士黑 标准版</span>
+					</li>
+				</ul>
+				<div class="number">
+					<div>购买数量</div>
+					<div>-</div>
+					<div>1</div>
+					<div>+</div>
+				</div>
+			</div>
+			<div class="fu_bottom">确定</div>
+		</div>
+	</body>
+</html>
